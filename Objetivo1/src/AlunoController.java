@@ -65,7 +65,6 @@ public class AlunoController {
 
         Aluno alunoId5 = alunoList.stream().filter(a -> a.getId() == 5).findAny().orElse(null);
         System.out.println("\nAluno 5 na Lista: " + alunoId5);
-        //As linhas acima estando dando problema no metodo equal()
 
         System.out.println("\nAluno 5 no Mapa: " + alunoMap.get(3));
 
