@@ -1,6 +1,6 @@
 public class Aluno {
     private int id;
-    private int cpf;
+    private long cpf;
     private String nome;
     private String sobrenome;
     private String email;
@@ -16,11 +16,6 @@ public class Aluno {
         this.email = email;
     }
 
-    public Aluno(int cpf, String nome, String sobrenome) {
-        this.cpf = cpf;
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-    }
 
     public Aluno(String nome, String sobrenome) {
         this.nome = nome;
@@ -65,5 +60,16 @@ public class Aluno {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "id=" + id +
+                ", cpf=" + cpf +
+                ", nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
