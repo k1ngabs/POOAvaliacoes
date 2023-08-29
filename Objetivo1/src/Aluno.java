@@ -1,6 +1,6 @@
 public class Aluno {
-    private int id;
-    private long cpf;
+    private Integer id;
+    private Integer cpf;
     private String nome;
     private String sobrenome;
     private String email;
@@ -26,7 +26,7 @@ public class Aluno {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -34,7 +34,7 @@ public class Aluno {
         return cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(Integer cpf) {
         this.cpf = cpf;
     }
 

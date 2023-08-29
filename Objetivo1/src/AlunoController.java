@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class AlunoController {
     public static void main(String[] args) {
         // Atividade 1.a:
@@ -38,5 +40,37 @@ public class AlunoController {
         System.out.println(al2.getNome());
         System.out.println(al2.getSobrenome());
         System.out.println(al2.getEmail());
+
+        // Atividade 2:
+        al5.setId(5);
+        al6.setId(6);
+
+        List<Aluno> alunoList = new ArrayList<>();
+        alunoList.add(al1);
+        alunoList.add(al2);
+        alunoList.add(al3);
+        alunoList.add(al4);
+        alunoList.add(al5);
+        alunoList.add(al6);
+        System.out.println("\nLista de Alunos:\n" + alunoList);
+
+        Map<Integer, Aluno> alunoMap = new HashMap<>();
+        alunoMap.put(al1.getId(), al1);
+        alunoMap.put(al2.getId(), al2);
+        alunoMap.put(al3.getId(), al3);
+        alunoMap.put(al4.getId(), al4);
+        alunoMap.put(al5.getId(), al5);
+        alunoMap.put(al6.getId(), al6);
+        System.out.println("\nMapa da Alunos:\n" + alunoMap);
+
+        //Aluno alunoId5 = alunoList.stream().filter(c -> c.getId().equals(5)).findAny().orElse(null);
+        //System.out.println("\nAluno 5 na Lista: " + alunoId5);
+        //As linhas acima estando dando problema no metodo equal()
+
+        System.out.println("\nAluno 5 no Mapa: " + alunoMap.get(3));
+
+        alunoList.sort(Comparator.comparing(Aluno::getId).reversed());
+        System.out.println("\nLista de Alunos Decrescente:" + alunoList);
+
     }
 }
