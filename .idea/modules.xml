@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/POOAvaliacoes.iml" filepath="$PROJECT_DIR$/POOAvaliacoes.iml" />
       <module fileurl="file://$PROJECT_DIR$/obj2_herancaMultipla1/obj2_herancaMultipla1.iml" filepath="$PROJECT_DIR$/obj2_herancaMultipla1/obj2_herancaMultipla1.iml" />
       <module fileurl="file://$PROJECT_DIR$/obj2_herancaSimples1/obj2_herancaSimples1.iml" filepath="$PROJECT_DIR$/obj2_herancaSimples1/obj2_herancaSimples1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/obj2_polimorfismo/obj2_polimorfismo.iml" filepath="$PROJECT_DIR$/obj2_polimorfismo/obj2_polimorfismo.iml" />
     </modules>
   </component>
 </project>
