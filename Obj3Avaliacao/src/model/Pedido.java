@@ -78,10 +78,10 @@ public class Pedido {
 
     @Override
     public String toString(){
-        return "\n\nVenda " + numero +
-                "\nData - " + data +
-                "\nItens vendidos - " + itens +
-                "\nValor total - " + Math.ceil(valor) +
-                "\nVendedor - " + vendedor.getNome();
+        return  "\n\nVenda " + numero +
+                "\nVendedor: " + vendedor.getNome() +
+                "\nData: " + data +
+                "\nItens vendidos: " + itens +
+                "\nValor total: " + Math.ceil(valor);
     }
 }

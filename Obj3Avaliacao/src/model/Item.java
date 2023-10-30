@@ -62,8 +62,8 @@ public class Item {
     public String toString() {
         return "\n    Item " + codItem +
                 ": " + produto.getNome() +
-                " | quantidade : " + quantidade +
-                " | desconto : " + desconto +
-                "% | valor total : " + Math.ceil(valorTotal);
+                " { Quantidade : " + quantidade +
+                " | Desconto : " + desconto +
+                "% | Valor total : " + Math.ceil(valorTotal) + " }";
     }
 }
